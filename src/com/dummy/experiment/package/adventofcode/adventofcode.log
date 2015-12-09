@@ -1,0 +1,14 @@
+2015-12-03 15:31:49,303 - __main__ - WARNING - >>> logger Phase 1 TEST TEST TEST <<<
+2015-12-03 15:31:49,323 - __main__ - WARNING - >>> logger Santa & Robot TEST TEST TEST <<<
+2015-12-03 15:35:00,274 - DayThree - WARNING - >>> logger Phase 1 TEST TEST TEST <<<
+2015-12-03 15:35:00,293 - DayThree - WARNING - >>> logger Santa & Robot TEST TEST TEST <<<
+2015-12-03 15:35:24,629 - DayThree - WARNING - >>> logger Phase 1 TEST TEST TEST <<<
+2015-12-03 15:35:24,649 - DayThree - WARNING - >>> logger Santa & Robot TEST TEST TEST <<<
+2015-12-03 15:36:01,806 - DayThree - WARNING - >>> logger Phase 1 TEST TEST TEST <<<
+2015-12-03 15:36:01,825 - DayThree - WARNING - >>> logger Santa & Robot TEST TEST TEST <<<
+2015-12-03 15:36:36,287 - DayThree - DEBUG - >>> logger Phase 1 TEST TEST TEST <<<
+2015-12-03 15:36:36,306 - DayThree - DEBUG - >>> logger Santa & Robot TEST TEST TEST <<<
+2015-12-03 15:38:09,123 - DayThree - DEBUG - >>> Phase 1 TEST TEST TEST <<<
+2015-12-03 15:38:09,143 - DayThree - DEBUG - >>> Santa & Robot TEST TEST TEST <<<
+2015-12-03 15:56:49,809 - DayThree - DEBUG - >>> Phase 1 TEST TEST TEST <<<
+2015-12-03 15:56:49,828 - DayThree - DEBUG - >>> Santa & Robot TEST TEST TEST <<<
