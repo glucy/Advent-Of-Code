@@ -141,6 +141,7 @@ with open("/Users/glucy/code/AdventOfCode/resources/adventofcode/daySix", "r") a
     for line in lines:
         grid = daySix.parseInstructions(line, grid)
     print "Number of lights on: ", daySix.numOfLightsOn(grid)
+#     Number of lights on:  400410
 
     for x in range(1000):
         for y in range(1000):
@@ -148,3 +149,4 @@ with open("/Users/glucy/code/AdventOfCode/resources/adventofcode/daySix", "r") a
     for line in lines:
         grid = daySix.parseInstructionsPart2(line, grid)
     print "Total brightness: ", daySix.totalBrightness(grid)
+#     Total brightness:  15343601

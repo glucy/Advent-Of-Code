@@ -36,6 +36,7 @@ while x < 40:
     x += 1
 
 print "40 Times: ", len(input)
+# 40 Times:  252594
 
 input = [1, 1, 1, 3, 2, 2, 2, 1, 1, 3]
 x = 0
@@ -44,4 +45,4 @@ while x < 50:
     x += 1
 
 print "50 Times:", len(input)
-
+# 50 Times: 3579328
