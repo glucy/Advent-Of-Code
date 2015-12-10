@@ -68,6 +68,7 @@ with open("/Users/glucy/code/AdventOfCode/resources/adventofcode/dayThree", "r")
         houses.add(Coordinate(phase1.x_coord, phase1.y_coord))
 
 print "Number of Houses for Phase 1: ", len(houses)
+# Number of Houses for Phase 1:  2592
 
 with open("/Users/glucy/code/AdventOfCode/resources/adventofcode/dayThree", "r") as f:
     dayThree = DayThree()
@@ -90,3 +91,4 @@ with open("/Users/glucy/code/AdventOfCode/resources/adventofcode/dayThree", "r")
             count += 1
 
 print "Number of Houses for Santa & Robot: ", len(houses)
+# Number of Houses for Santa & Robot:  2360
