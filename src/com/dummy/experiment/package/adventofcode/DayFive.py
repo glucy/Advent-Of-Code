@@ -10,9 +10,9 @@ class DayFive():
     def __init__(self):
         pass
 
-    def containsThreeVowels(self, input):
+    def containsThreeVowels(self, inputVal):
         count = 0
-        for c in input:
+        for c in inputVal:
             if c == 'a':
                 count += 1
             elif c == 'e':
@@ -28,34 +28,34 @@ class DayFive():
             return True
         return False
 
-    def containsDoubleLetter(self, input):
+    def containsDoubleLetter(self, inputVal):
         i = 0
-        while i < len(input) - 1:
-            if input[i] == input[i + 1]:
+        while i < len(inputVal) - 1:
+            if inputVal[i] == inputVal[i + 1]:
                 return True
             else:
                 i += 1
         return False
 
-    def doesNotContainsBadLetters(self, input):
+    def doesNotContainsBadLetters(self, inputVal):
         # Bad Strings: ab, cd, pq, or xy
-        if 'ab' not in input and 'cd' not in input and 'pq' not in input and 'xy' not in input:
+        if 'ab' not in inputVal and 'cd' not in inputVal and 'pq' not in inputVal and 'xy' not in inputVal:
             return True
         return False
 
-    def repeatingLetterWithOneBetween(self, input):
+    def repeatingLetterWithOneBetween(self, inputVal):
         i = 0
-        while i < len(input) - 2:
-            if input[i] == input[i + 2]:
+        while i < len(inputVal) - 2:
+            if inputVal[i] == inputVal[i + 2]:
                 return True
             else:
                 i += 1
         return False
 
-    def pairOfLettersAppearingTwice(self, input):
+    def pairOfLettersAppearingTwice(self, inputVal):
         i = 0
-        while i < len(input) - 2:
-            if input[i:i + 2] in input[i + 2:]:
+        while i < len(inputVal) - 2:
+            if inputVal[i:i + 2] in inputVal[i + 2:]:
                 return True
             else:
                 i += 1
@@ -66,7 +66,10 @@ with open("/Users/glucy/code/AdventOfCode/resources/adventofcode/dayFive", "r") 
     count = 0
     listOfLines = f.readlines()
     for word in listOfLines:
-        if dayFive.containsThreeVowels(word) and dayFive.containsDoubleLetter(word) and dayFive.doesNotContainsBadLetters(word):
+        if (dayFive.containsThreeVowels(word) and
+                dayFive.containsDoubleLetter(word) and
+                dayFive.doesNotContainsBadLetters(word)):
+
             count += 1
 
     print "Nice Words Part One: ", count
@@ -76,4 +79,4 @@ with open("/Users/glucy/code/AdventOfCode/resources/adventofcode/dayFive", "r") 
         if dayFive.repeatingLetterWithOneBetween(line) and dayFive.pairOfLettersAppearingTwice(line):
             num += 1
 
-    print "Nice Words Part Two:", num
+    print "Nice Words Part Two: ", num
