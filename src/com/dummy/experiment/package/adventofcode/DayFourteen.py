@@ -23,11 +23,13 @@ class Reindeer():
     totalDistance = 0
     points = 0
 
-    def __init__(self, name, speed, duration, rest):
+    def __init__(self, name, speed, duration, rest, totalDistance, points):
         self.name = name
         self.speed = speed
         self.duration = duration
         self.rest = rest
+        self.totalDistance = totalDistance
+        self.points = points
 
 
 with open("/Users/glucy/code/AdventOfCode/resources/adventofcode/dayFourteen", "r") as f:
@@ -36,7 +38,7 @@ with open("/Users/glucy/code/AdventOfCode/resources/adventofcode/dayFourteen", "
     for line in lines:
         line = line[:-2]
         name, _, _, speed, _, _, duration, _, _, _, _, _, _, rest, _ = line.split()
-        reindeers.append(Reindeer(name, int(speed), int(duration), int(rest)))
+        reindeers.append(Reindeer(name, int(speed), int(duration), int(rest), 0, 0))
 
 
 def totalDistanceIn(reindeer, seconds):
@@ -68,14 +70,16 @@ for deer in reindeerList1:
         winningDistance = distance
 
 print "Winning Distance: ", winningDistance
+# Winning Distance:  2640
 
 
 # PART 2
 winningPoints = 0
 sec = 1
+leaderSet = set()
 while sec <= raceTime:
-    leaderSet = set()
-    currentLeader = Reindeer("blank", 0, 0, 0)
+    leaderSet.clear()
+    currentLeader = Reindeer("blank", 0, 0, 0, 0, 0)
     for deer in reindeerList2:
         deer.totalDistance = 0
         deer = totalDistanceIn(deer, sec)
@@ -95,3 +99,4 @@ for deer in reindeerList2:
         winningPoints = deer.points
 
 print "Winning Points: ", winningPoints
+# Winning Points:  1102
